@@ -21,10 +21,10 @@ class Solution {
     }
     public int find(int[] nums)
     {
-        for (int i=0;i<nums.length;i++)
+        for (int index=0;index<nums.length;index++)
         {
-            if (i !=nums[i])
-                return i;
+            if (index !=nums[index])
+                return index;
         }
         return nums.length;  //when missing no is out array;
     }
