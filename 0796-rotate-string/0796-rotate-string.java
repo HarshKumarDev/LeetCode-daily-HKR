@@ -1,21 +1,18 @@
 class Solution {
-    public boolean rotateString(String s, String goal)
-    {
-       int l=s.length();
-                int i=0;
-                while (i<l)
-                {
-                    String str=" ";
-                    char ch=s.charAt(0);
-                    String st=" ";
-                    st=s.substring(1,l);
-                    str=st+ch;
-                    s=str;
-                    i++;
-                    //System.out.println(str);
-                    if (str.equalsIgnoreCase(goal))
-                        return true;
+    public boolean rotateString(String A, String B) {
+        if (A.length() != B.length())
+            return false;
+        if (A.length() == 0)
+            return true;
+
+        search:
+            for (int s = 0; s < A.length(); ++s) {
+                for (int i = 0; i < A.length(); ++i) {
+                    if (A.charAt((s+i) % A.length()) != B.charAt(i))
+                        continue search;
                 }
-                return false;
+                return true;
+            }
+        return false;
     }
 }
