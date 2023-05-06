@@ -15,12 +15,12 @@ class Solution {
           }
           num++;
       }
-        while (k>=0)
+        while (k>0)
         {
             k--;
             num++;
         }
-        return num-2;
+        return num-1;
     }
 }
               
