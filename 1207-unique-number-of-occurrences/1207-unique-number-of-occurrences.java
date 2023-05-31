@@ -12,7 +12,7 @@ class Solution {
              count++;
          }
          else
-         {
+               {
              if (hs.contains(count))
                  return false;
              hs.add(count);
@@ -26,6 +26,21 @@ class Solution {
             return true;
      }
 }
+        
+        
+//              if (hs.contains(count))
+//                  return false;
+//              hs.add(count);
+//              count=1;
+//          }
+//      }
+//        // hs.add(count);  // last element
+//                 if(hs.contains(count)) 
+//                     return false;
+//         else
+//             return true;
+//      }
+// }
          
              
              
