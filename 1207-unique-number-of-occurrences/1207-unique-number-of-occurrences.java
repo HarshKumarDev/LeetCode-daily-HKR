@@ -19,7 +19,6 @@ class Solution {
              count=1;
          }
      }
-       // hs.add(count);  // last element
                 if(hs.contains(count)) 
                     return false;
         else
