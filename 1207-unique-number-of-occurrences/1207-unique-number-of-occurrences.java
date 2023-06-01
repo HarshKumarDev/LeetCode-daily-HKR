@@ -4,7 +4,8 @@ class Solution {
         Arrays.sort(arr);
      ArrayList<Integer> hs =new ArrayList<>(); 
         int count=1;
-     for (int i=0;i<arr.length-1;i++)
+        int i=0;
+     for ( i=0;i<arr.length-1;i++)
      { 
          int n=arr[i];
          if (arr[i] == arr[i+1])
@@ -19,9 +20,14 @@ class Solution {
              count=1;
          }
      }
-                if(hs.contains(count)) 
-                    return false;
-        else
+        if (arr.length-1 == i)
+        {
+          if(hs.contains(count))
+          {
+              return false;
+          }
+            hs.add(count);
+        }
             return true;
      }
 }
