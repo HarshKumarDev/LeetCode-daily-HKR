@@ -7,7 +7,7 @@ class Solution {
         for(int j=0;j<n;j++){
             if(matrix[0][j]==0)
                 isRow0=true;
-        }
+        } 
         
         for(int i=0;i<m;i++){
             if(matrix[i][0]==0)
